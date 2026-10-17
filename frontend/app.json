@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Asomi",
+    "slug": "asomi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "asomi",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "platforms": ["android"],
+    "android": {
+      "package": "app.asomi",
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS",
+        "android.permission.CALL_PHONE",
+        "com.android.alarm.permission.SET_ALARM",
+        "android.permission.CAMERA",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE"
+      ],
+      "blockedPermissions": [
+        "android.permission.READ_SMS",
+        "android.permission.SEND_SMS",
+        "android.permission.RECEIVE_SMS",
+        "android.permission.READ_CALL_LOG",
+        "android.permission.WRITE_CALL_LOG"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0A0B12",
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 29
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

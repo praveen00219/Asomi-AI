@@ -1,0 +1,11 @@
+/*
+ * Tailwind entry point, compiled by NativeWind through metro.config.js.
+ *
+ * Keep this file to the three directives. Asomi's actual tokens live in
+ * src/theme/tokens.js and reach Tailwind via tailwind.config.js - putting
+ * colors or fonts here as raw CSS would create the second source of truth
+ * that setup exists to avoid.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
