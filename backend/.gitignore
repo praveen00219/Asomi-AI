@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Secrets - never commit these. Only .env.example belongs in the repo.
+.env
+.env.local
+.env.*.local
+
+# Test + tooling output
+coverage/
+.eslintcache
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
